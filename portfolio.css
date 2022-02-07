@@ -86,7 +86,7 @@ padding-bottom:50px;
   height: 10vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('codebackground-min.jpg');
   background-attachment: fixed;
 }
 
@@ -147,7 +147,7 @@ padding-bottom:50px;
   height: 10vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('comp-min.jpg');
   background-attachment: fixed;
 }
 
@@ -157,7 +157,7 @@ padding-bottom:50px;
   height: 5vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1558456738-8664eb2ecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('carlos-deleon-qHAbhatTRTs-unsplash-min.jpg');
   background-attachment: fixed;
 }
 
@@ -212,6 +212,7 @@ padding-bottom:50px;
   h1 {
     font-size: 45px;
     margin-left:-26px;
+
    
   }
   .icon {
@@ -225,6 +226,9 @@ padding-bottom:50px;
   .about h2 {
     font-size: 40px;
     letter-spacing: 4px;
+  }
+  .firstLiSet li {
+    margin-left:-3px;
   }
   .about p {
     font-size:20px;
@@ -300,6 +304,7 @@ padding-bottom:50px;
     font-size: 24px;
     letter-spacing: 5px;
     margin-left:-10px;
+    margin-top:-4px;
    
   }
   .firstLiSet{
