@@ -328,10 +328,12 @@ padding-bottom:50px;
   .break,
   .break1{
     padding-top:60%;
+    background-attachment: initial;
   }
  
   .break2{
     padding-top:77%;
+    background-attachment:initial;
   }
 
   .projects h2,
@@ -387,6 +389,9 @@ padding-bottom:50px;
   .firstLiSet{
     margin-right:16px;
   }
+  .break,.break1,.break2{
+background-attachment:initial;
+  }
 
   .about img{
     margin-left: 10px;
@@ -405,6 +410,10 @@ padding-bottom:50px;
     width:90%;
     margin-left:7px;
 
+  }
+  
+  .break,.break1,.break2{
+    background-attachment: initial;
   }
   .about img {
     margin-left:9px;
