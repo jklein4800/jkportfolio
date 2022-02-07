@@ -88,6 +88,7 @@ padding-bottom:50px;
   background-position: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('codebackground-min.jpg');
   background-attachment: fixed;
+  z-index:-10;
 }
 
 /*PROJECTS SECTION*/
