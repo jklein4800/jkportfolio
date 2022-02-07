@@ -1,0 +1,406 @@
+html {
+  font-family: 'Nanum Gothic', sans-serif;
+  scroll-behavior: smooth;
+}
+
+container {
+  display:flex;
+  
+}
+
+
+.whole{
+  display:flex;
+  flex-direction:column;
+  width:100%;
+}
+
+.orange {
+  background-color:orange;
+  width:50%;
+ 
+}
+.black {
+  background-color:black;
+  width: 50%;
+  
+}
+
+/*FIRST SECTION*/
+
+h1 {
+  font-size: 55px;
+  letter-spacing: 15px;
+  font-weight: 100;
+  padding-left: 10%;
+  padding-top: 20%;
+  opacity: 0;
+  transition: 1s opacity;
+  text-shadow: 3px 3px 5px orangered;
+ }
+
+
+.firstLiSet li {
+  list-style-type: none;
+  font-size: 2em;
+  letter-spacing: 5px;
+  font-weight: 100;
+  text-align: center;
+  padding-top: 3em;
+  opacity: 0;
+  transition: 1s opacity;
+  
+  
+}
+
+.firstLiSet li a {
+  text-decoration: none;
+  color:rgb(255,140,0);
+  
+  }
+
+.firstLiSet li a:link
+.firstLiSet li a:visited {
+  text-decoration: none;
+  color:rgb(255,140,0);
+}
+
+.firstLiSet li a:hover {
+  padding-bottom: 7px;
+  border-bottom: 2px solid white;
+  width: 2px;
+  
+  }
+
+.icon {
+color:rgb(255,140,0);
+padding-left: 5px;
+width: 15%;
+padding-bottom:50px;
+
+}
+
+.break {
+  padding-top: 40%;
+  width: 100%;
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  background-attachment: fixed;
+}
+
+/*PROJECTS SECTION*/
+
+.projects {
+  display: flex;
+  flex-direction:row-reverse;
+}
+
+.projects h2,
+.about h2 {
+  color: rgb(255,140,0);
+  font-size: 55px;
+  text-align: center;
+  padding-top: 20%;
+  text-shadow: 3px 3px 5px red;
+  letter-spacing: 3px;
+}
+
+
+
+.divide{
+  width: 50%;
+  height: 2px;
+  margin-left: 25%;
+  background-color: orangered;
+}
+
+.box p {
+  padding-left: 10%;
+}
+
+ 
+.projects img {
+  width: 30%;
+  height: auto;
+  padding-left: 25%;
+}
+
+.projects img:last-of-type{
+  padding-bottom: 20px;
+}
+
+
+.projects h4 {
+  font-size: 25px;
+  margin-left: 10%;
+  letter-spacing: 1px;
+  font-weight: 100;
+  border-bottom: solid 2px black;
+ width: 60%;
+}
+
+.break1 {
+  padding-top: 40%;
+  width: 100%;
+  height: 10vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-attachment: fixed;
+}
+
+.break2 {
+  padding-top: 40%;
+  width: 100%;
+  height: 5vh;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1558456738-8664eb2ecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80');
+  background-attachment: fixed;
+}
+
+/*SKILLS*/
+
+.skills h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20%;
+  text-shadow: 3px 3px 5px orangered;
+  letter-spacing: 3px;
+}
+
+.skills li {
+  color:  rgb(255,140,0);
+  font-size: 22px;
+  list-style-type:none;
+  width: 88%;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding:5px;
+  text-align: center;
+  
+}
+
+/*ABOUT*/
+
+
+.me {
+  width: 40%;
+  height: auto;
+  margin-left: 25%;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  border-radius: 50px;
+}
+
+
+.about p {
+  font-size: 25px;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  width: 70%;
+  
+
+}
+
+@media screen and (max-width: 1024px){
+  
+  h1 {
+    font-size: 45px;
+    margin-left:-26px;
+   
+  }
+  .icon {
+    width:19%;
+  }
+  .projects img {
+    width: 35%;
+  }
+  .projects h2,
+  .skills h2,
+  .about h2 {
+    font-size: 40px;
+    letter-spacing: 4px;
+  }
+  .about p {
+    font-size:20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .whole{
+    width:95%;
+  }
+  h1 {
+    padding-top: 150px;
+    font-size: 29px;
+  
+  }
+  .firstLiSet{
+    margin-left:-33px;
+  }
+  li a{
+     font-size:25px; 
+  }
+  .icon{
+    padding-left: 5px;
+    width: 20%;
+  }
+  
+  .me{
+    height: 25%;
+    width: 55%;
+  }
+
+  .projects h2,
+  .skills h2,
+  .about h2 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    font-weight: 100;
+  }
+
+  .projects h4{
+    font-size: 20px;
+  }
+
+  .projects img{
+    width: 40%;
+  }
+
+  .projects p{
+    margin-left:-29px;
+    width:83%;
+  }
+
+ .skills li{
+   font-size:20px;
+ }
+
+ .about p{
+   font-size: 20px;
+ }
+
+}
+
+@media screen and (max-width: 425px){
+
+  .whole{
+    width:111%;
+  }
+
+  .top{
+    height:449px;
+  }
+  h1{
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin-left:-10px;
+   
+  }
+  .firstLiSet{
+    padding-top: 54%;
+    margin-left:-49px;
+  }
+  .firstLiSet li{
+    width:90%;
+    margin-top: -45px;
+    padding:30px;
+    margin-left:-27px;
+  }
+  .firstLiSet a{
+    font-size: 20px;
+  }
+  .icon{
+    width: 27%;
+  }
+
+  .break,
+  .break1{
+    padding-top:60%;
+  }
+ 
+  .break2{
+    padding-top:77%;
+  }
+
+  .projects h2,
+  .skills h2,
+  .about h2 {
+    font-size: 34px;
+  }
+  .box{
+    padding-bottom: 10px;
+    margin-left:-15px;
+  }
+  .projects img {
+      width:69%;
+      margin-left:-24px;
+  }
+  .projects h4{
+    width: 80%;
+  }
+  .projects p {
+    width: 75%;
+    font-size:15px;
+    margin-top:-5px;
+    margin-left:-5px;
+  }
+
+  .skills li {
+    font-size: 16px;
+    margin-left:-15px;
+
+  }
+  .about p {
+    width:81%;
+    margin-left:-39px;
+    font-size: 15px;
+  }
+
+  .about img{
+    width: 145px;
+    height: 180px;
+    margin-left: 23px;
+
+  }
+  footer {
+    font-size:15px;
+  }
+}
+
+@media screen and (max-width:375px){
+  
+  h1{
+    font-size:20px;
+  }
+  .firstLiSet{
+    margin-right:16px;
+  }
+
+  .about img{
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width:320px){
+  .whole{
+    width:110%;
+  }
+  h1{
+    font-size:18px;
+    margin-left:-13px;
+  }
+  .projects h4{
+    width:90%;
+    margin-left:7px;
+
+  }
+  .about img {
+    margin-left:9px;
+  }
+}
