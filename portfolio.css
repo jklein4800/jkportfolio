@@ -3,9 +3,23 @@ html {
   scroll-behavior: smooth;
 }
 
+
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 container {
   display:flex;
   
+}
+
+.top{
+  height:100vh;
 }
 
 
@@ -39,7 +53,9 @@ h1 {
   text-shadow: 3px 3px 5px orangered;
  }
 
-
+ ul{
+   list-style-type: none;
+ }
 .firstLiSet li {
   list-style-type: none;
   font-size: 2em;
@@ -49,6 +65,7 @@ h1 {
   padding-top: 3em;
   opacity: 0;
   transition: 1s opacity;
+
   
   
 }
@@ -74,11 +91,39 @@ h1 {
 
 .icon {
 color:rgb(255,140,0);
-padding-left: 5px;
-width: 15%;
-padding-bottom:50px;
+
 
 }
+
+.icons{
+  display: flex;
+
+  justify-content: space-around;
+  font-size: 30px;
+  width:93%;
+  padding-top:60px;
+
+}
+
+
+
+
+.icons li a{
+  padding:50px;
+  width: 20px;
+ 
+  
+}
+
+
+.icons a:link,
+.icons a:visited{
+  text-decoration: none;
+  margin: 32px;
+}
+
+
+
 
 .break {
   padding-top: 40%;
@@ -86,8 +131,9 @@ padding-bottom:50px;
   height: 10vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('codebackground-min.jpg');
   background-attachment: fixed;
+
 }
 
 /*PROJECTS SECTION*/
@@ -97,10 +143,15 @@ padding-bottom:50px;
   flex-direction:row-reverse;
 }
 
+.examples{
+  display:flex;
+  flex-direction:column;
+}
+
 .projects h2,
 .about h2 {
   color: rgb(255,140,0);
-  font-size: 55px;
+  font-size: 65px;
   text-align: center;
   padding-top: 20%;
   text-shadow: 3px 3px 5px red;
@@ -117,12 +168,14 @@ padding-bottom:50px;
 }
 
 .box p {
-  padding-left: 10%;
+  padding-left: 25%;
+  font-size:20px;
+  width:40%;
 }
 
  
 .projects img {
-  width: 30%;
+  width: 40%;
   height: auto;
   padding-left: 25%;
 }
@@ -134,11 +187,11 @@ padding-bottom:50px;
 
 .projects h4 {
   font-size: 25px;
-  margin-left: 10%;
+  margin-left:25%;
   letter-spacing: 1px;
   font-weight: 100;
   border-bottom: solid 2px black;
- width: 60%;
+ width: 39%;
 }
 
 .break1 {
@@ -147,7 +200,7 @@ padding-bottom:50px;
   height: 10vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=933&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('comp-min.jpg');
   background-attachment: fixed;
 }
 
@@ -157,14 +210,14 @@ padding-bottom:50px;
   height: 5vh;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1558456738-8664eb2ecb47?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('carlos-deleon-qHAbhatTRTs-unsplash-min.jpg');
   background-attachment: fixed;
 }
 
 /*SKILLS*/
 
 .skills h2 {
-  font-size: 50px;
+  font-size: 63px;
   text-align: center;
   padding-top: 20%;
   text-shadow: 3px 3px 5px orangered;
@@ -207,34 +260,55 @@ padding-bottom:50px;
 
 }
 
-@media screen and (max-width: 1024px){
+@media all and (max-width: 1024px) and (height:775px){
+  .whole{
+    width:100%;
+  }
   
   h1 {
     font-size: 45px;
     margin-left:-26px;
+    margin-top: 151px;
    
   }
-  .icon {
-    width:19%;
+  .projects h4 {
+    font-size:30px;
+  }
+
+  .projects p {
+    font-size:22px;
   }
   .projects img {
-    width: 35%;
+    width: 40%;
+  }
+
+  .firstLiSet,.icons{
+    padding-top: 15%;
+  }
+  .icons{
+    width:88%;
+    padding-top: 18%;
   }
   .projects h2,
   .skills h2,
   .about h2 {
-    font-size: 40px;
+    font-size: 60px;
     letter-spacing: 4px;
   }
+  .firstLiSet li {
+    margin-left:-3px;
+  }
+
+  .about img {
+    width:50%;
+  }
   .about p {
-    font-size:20px;
+    font-size:30px;
   }
 }
 
-@media screen and (max-width: 768px){
-  .whole{
-    width:100%;
-  }
+@media all and (max-width: 768px) and (height: 775px){
+
   h1 {
     padding-top: 150px;
     font-size: 29px;
@@ -245,10 +319,11 @@ padding-bottom:50px;
   }
   li a{
      font-size:25px; 
+     
   }
-  .icon{
-    padding-left: 5px;
-    width: 20%;
+  .icons a:link,
+  .icons a:visited{
+    padding:14px;
   }
   
   .me{
@@ -259,22 +334,24 @@ padding-bottom:50px;
   .projects h2,
   .skills h2,
   .about h2 {
-    font-size: 40px;
+    font-size: 50px;
     letter-spacing: 5px;
     font-weight: 100;
   }
 
   .projects h4{
-    font-size: 20px;
+    font-size: 27px;
+    width:50%;
   }
 
   .projects img{
-    width: 40%;
+    width: 175px;
+    height: auto;
   }
 
   .projects p{
-    margin-left:-29px;
-    width:83%;
+    margin-left:-5px;
+    width:56%;
   }
 
  .skills li{
@@ -282,90 +359,136 @@ padding-bottom:50px;
  }
 
  .about p{
-   font-size: 20px;
+   font-size: 25px;
+ }
+ .about img{
+  width: 62%;
+  height: auto;
+  margin-left: 58px;
  }
 
 }
 
-@media screen and (max-width: 425px){
+@media all and (max-width: 425px){
 
-  .whole{
-    width:111%;
+  body {
+    width:fit-content;
   }
 
   .top{
-    height:449px;
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .orange,
+  .black{
+    width:100%;
   }
   h1{
-    font-size: 24px;
+    font-size: 28px;
     letter-spacing: 5px;
-    margin-left:-10px;
+    width: 10%;
+   
+    margin-left: 77px;
+    margin-top: -20px;
+    padding-bottom: 119px;
    
   }
   .firstLiSet{
-    padding-top: 54%;
-    margin-left:-49px;
+  margin-top:17px;
+  margin-bottom:-18px;
   }
   .firstLiSet li{
-    width:90%;
+
     margin-top: -45px;
     padding:30px;
-    margin-left:-27px;
+
+  
   }
   .firstLiSet a{
-    font-size: 20px;
+
+    font-size:22px;
+  }
+
+  .icons{
+    width:76%;
   }
   .icon{
     width: 27%;
   }
 
+  .icons li{
+    padding:7px;
+  }
+
+
   .break,
   .break1{
     padding-top:60%;
+    height:175px;
+    background-attachment: initial;
   }
  
   .break2{
     padding-top:77%;
+    background-attachment: initial;
+  }
+  .skills{
+    display: flex;
+    flex-direction:column;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .projects h2,
   .skills h2,
   .about h2 {
     font-size: 34px;
+    margin-top:-45px;
   }
   .box{
     padding-bottom: 10px;
-    margin-left:-15px;
+    margin-right:15%;
   }
-  .projects img {
+  .projects img{
       width:69%;
       margin-left:-24px;
   }
+
   .projects h4{
-    width: 70%;
+    width: 85%;
+    margin-left:40px;
   }
   .projects p {
     width: 75%;
-    font-size:15px;
+    font-size:19px;
     margin-top:-5px;
-    margin-left: 9px;
+    margin-left:-22px;
   }
 
   .skills li {
-    font-size: 16px;
-    margin-left:-15px;
+    font-size: 24px;
+    width: 100%;
+    margin-left: -27px;
+  }
 
+  .about {
+    display:flex;
+    flex-direction:column;
   }
   .about p {
-    width:81%;
-    margin-left:-39px;
-    font-size: 15px;
+    width:90%;
+    margin-left:-26px;
+    font-size: 21px;
   }
 
   .about img{
-    width: 145px;
-    height: 180px;
-    margin-left: 23px;
+    width: 240px;
+    height: 285px;
+    padding-left: 7%;
 
   }
   footer {
@@ -373,34 +496,3 @@ padding-bottom:50px;
   }
 }
 
-@media screen and (max-width:375px){
-  
-  h1{
-    font-size:20px;
-  }
-  .firstLiSet{
-    margin-right:16px;
-  }
-
-  .about img{
-    margin-left: 10px;
-  }
-}
-
-@media screen and (max-width:320px){
-  .whole{
-    width:110%;
-  }
-  h1{
-    font-size:18px;
-    margin-left:-13px;
-  }
-  .projects h4{
-    width:90%;
-    margin-left:7px;
-
-  }
-  .about img {
-    margin-left:9px;
-  }
-}
